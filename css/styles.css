@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* margin: auto; */
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.box-item {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.box-item:first-child {
+  background-color: coral;
+  top: 0;
+  left: 0;
+}
+
+.box-item:nth-child(2) {
+  background-color: slateblue;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+}
+
+.box-item:last-child {
+  background-color: lightseagreen;
+  right: 0;
+  bottom: 0;
+}
